@@ -1,0 +1,150 @@
+$background-color-main: #535927;
+$background-color-light: #D1B69E;
+$font-color-light: #FFD185;
+$font-color-dark: #535927;
+$highlight-color-light: #FFD185;
+$highlight-color-dark: #535927;
+
+
+//----- Nav bar -----//
+.navbar {
+    padding: 0rem 1rem !important;
+}
+
+.bg-dark {
+    background-color: $background-color-main !important;
+}
+
+.navbar-brand {
+    color: $font-color-light !important;
+    font-family: "Bree Serif", serif;
+    font-size: 27px;
+    span {
+        padding-left: 85px;
+    }
+    img {
+        position: absolute;
+        top: -10px;
+        height: 70px;
+        -webkit-filter: drop-shadow(4px 4px);
+        filter: drop-shadow(4px 4px #343f4b);
+    }
+}
+
+.navbar-toggler {
+    color: $font-color-light !important;
+    border: none;
+    outline: none !important;
+    i {
+        font-size: 25px;
+    }
+}
+
+.nav-link {
+    color: $font-color-light !important;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+
+.navbar-nav {
+    float: right;
+    li {
+        text-align: right;
+    }
+}
+
+//-----Top section-----//
+.top-section {
+    margin-top: 5vh;
+    height: 35vh;
+    width: 100vw;
+}
+
+.top-section--background {
+    position: absolute;
+    top: 0;
+    height: 40vh;
+    width: 100vw;
+    background-image: url("../../static/images/background.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-color: $background-color-light;
+    z-index: -1;
+}
+
+//-----Middle Section-----//
+.middle-section {
+    height: 12.5vh;
+    text-align: center;
+    background-color: $background-color-main;
+    color: $font-color-light;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+
+//-----Bottom Section-----//
+.bottom-section {
+    padding-bottom: 40px;
+    background-color: $background-color-light;
+    .card {
+        background-color: $background-color-light;
+        color: $font-color-dark;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-align: center;
+        border: none;
+        
+        span {
+            color: $font-color-dark;
+        }
+        img {
+            width: 80px;
+            height: 80px;
+            border: 3px solid $font-color-dark;
+            margin: 10px 0 10px 0;
+        }
+
+        button {
+            width: 100%;
+            text-decoration: none;
+        }
+    }
+    .card-header {
+        background-color: $background-color-light;
+        button.collapsed {
+            .index-collapse--read-less {
+                display:none;
+            }
+            .index-collapse--read-more {
+                display:block;
+            }            
+        } 
+        button:not(.collapsed) {
+            .index-collapse--read-less {
+                display:block;
+            }
+            .index-collapse--read-more {
+                display:none;
+            }            
+        }
+       
+    }
+    .card-body {
+        width: 100%;
+        background-color: $background-color-light;
+        font-size: 1rem;
+        border: solid 1px $font-color-dark;
+        
+    }
+}
+
+//-----Footer-----//
+.footer--list {
+    color: $font-color-light;
+    background-color: $background-color-main;
+    text-align:center;
+    i {
+        margin: 10px 0 10px 0;
+    }
+}
