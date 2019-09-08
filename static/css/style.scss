@@ -5,10 +5,26 @@ $font-color-dark: #535927;
 $highlight-color-light: #FFD185;
 $highlight-color-dark: #535927;
 
+//----- Body -----//
+body {
+    background-color: $background-color-light;
+}
+
+
+
+//-----General-----//
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
 
 //----- Nav bar -----//
 .navbar {
-    padding: 0rem 1rem !important;
+    padding: 0rem 1rem 0rem 1rem!important;
 }
 
 .bg-dark {
@@ -18,7 +34,7 @@ $highlight-color-dark: #535927;
 .navbar-brand {
     color: $font-color-light !important;
     font-family: "Bree Serif", serif;
-    font-size: 27px;
+    font-size: 25px;
     span {
         padding-left: 85px;
     }
@@ -36,7 +52,7 @@ $highlight-color-dark: #535927;
     border: none;
     outline: none !important;
     i {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
@@ -53,24 +69,37 @@ $highlight-color-dark: #535927;
     }
 }
 
+.navbar-expand-lg {
+    z-index: 1;
+}
+
+//-----Background-----//
+.background {
+    padding-left: 0;
+}
+
+.top-section--background {
+    position: fixed;
+    top: 0;
+    height: 40vh;
+    background-image: url("../../static/images/background.jpg");
+    background-size: cover;
+    background-position: top;
+    z-index: -1;
+}
+
 //-----Top section-----//
 .top-section {
     margin-top: 5vh;
     height: 35vh;
-    width: 100vw;
+
+    .row {
+        margin: 0;
+        padding: 0;
+    }
 }
 
-.top-section--background {
-    position: absolute;
-    top: 0;
-    height: 40vh;
-    width: 100vw;
-    background-image: url("../../static/images/background.jpg");
-    background-size: cover;
-    background-position: bottom;
-    background-color: $background-color-light;
-    z-index: -1;
-}
+
 
 //-----Middle Section-----//
 .middle-section {
@@ -94,7 +123,7 @@ $highlight-color-dark: #535927;
         font-weight: 900;
         text-align: center;
         border: none;
-        
+
         span {
             color: $font-color-dark;
         }
@@ -112,30 +141,39 @@ $highlight-color-dark: #535927;
     }
     .card-header {
         background-color: $background-color-light;
+        padding-left: 0;
+        padding-right: 0;
         button.collapsed {
             .index-collapse--read-less {
-                display:none;
+                display: none;
             }
             .index-collapse--read-more {
-                display:block;
-            }            
-        } 
+                display: block;
+            }
+        }
         button:not(.collapsed) {
             .index-collapse--read-less {
-                display:block;
+                display: block;
             }
             .index-collapse--read-more {
-                display:none;
-            }            
+                display: none;
+            }
         }
-       
+
     }
     .card-body {
         width: 100%;
         background-color: $background-color-light;
         font-size: 1rem;
         border: solid 1px $font-color-dark;
-        
+
+    }
+    .card-img-top {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .card-container {
+        padding-top:20px;
     }
 }
 
@@ -143,8 +181,35 @@ $highlight-color-dark: #535927;
 .footer--list {
     color: $font-color-light;
     background-color: $background-color-main;
-    text-align:center;
+    text-align: center;
+    .row {
+        margin: 0;
+        padding: 0;
+    }
+    .col-3 {
+        padding: 0;
+        margin: 0;
+    }
     i {
         margin: 10px 0 10px 0;
+    }
+}
+
+@media (min-width:360px) {
+
+    h4 {
+        font-size: 1.5rem;
+    }
+    .card-header {
+        padding: .75rem 1.25rem;
+    }
+}
+
+@media (min-width:768px) {
+    .top-section--background {
+        background-position: center; // box-shadow: 0 0 8px 8px $background-color-light inset;
+        box-shadow: 12px 0 15px -4px $background-color-light inset, -12px 0 8px -4px $background-color-light inset;
+
+
     }
 }

@@ -32,9 +32,15 @@
 
 <body>
 
+  <section class="background container-fluid">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0 top-section--background">
+      </div>
+    </div>
+  </section>
   <!-- Image and text -->
   <section class="top-section">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:transparent">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
         <img src="./static/images/pawprint.png" alt="pawprint"/><span>Priority Pets</span>
       </a>
@@ -62,10 +68,8 @@
       </div>
     </nav>
   </section>
-  <div class="top-section--background">
-  </div>
 
-  <section class="middle-section container-fluid">
+  <section class="middle-section  container-fluid">
     <div class="row h-100">
       <div class="col-sm-12 my-auto">
         <h4><strong>Your pet is my priority</strong></h4>
@@ -73,12 +77,12 @@
     </div>
   </section>
 
-  <section class="bottom-section">
-    <div class="accordion" id="index-menu-accordian">
+  <section class="bottom-section  container-fluid">
+    <div class="accordion row d-block d-sm-none" id="index-menu-accordian">
       <div class="card">
         <div class="card-header" id="index-heading--services">
           <button class="btn btn-link index-collapse--button collapsed" type="button" data-toggle="collapse" data-target="#index-collapse--services" aria-expanded="true" aria-controls="index-collapse--services">
-            <div class="row h100">
+            <div class="row h-100">
               <div class="col-3 my-auto">
                 <img src="./static/images/dog.jpg" alt="dog" class="rounded-circle">
               </div>  
@@ -108,7 +112,7 @@
       <div class="card">
         <div class="card-header" id="index-heading--area">
           <button class="btn btn-link index-collapse--button collapsed" type="button" data-toggle="collapse" data-target="#index-collapse--area" aria-expanded="true" aria-controls="index-collapse--area">
-            <div class="row h100">
+            <div class="row h-100">
               <div class="col-3 my-auto">
                 <img src="./static/images/map.jpg" alt="map" class="rounded-circle">
               </div>  
@@ -136,9 +140,9 @@
       <div class="card">
         <div class="card-header" id="index-heading--the_paddock">
           <button class="btn btn-link index-collapse--button collapsed" type="button" data-toggle="collapse" data-target="#index-collapse--the_paddock" aria-expanded="true" aria-controls="index-collapse--the_paddock">
-            <div class="row h100">
+            <div class="row h-100">
               <div class="col-3 my-auto">
-                <img src="./static/images/horse.jpg" alt="horse" class="rounded-circle">
+                <img src="./static/images/horse.png" alt="horse" class="rounded-circle">
               </div>  
               <div class="col-9 my-auto">
                 <span><h4>The Paddock</h4></span>
@@ -164,7 +168,7 @@
       <div class="card">
         <div class="card-header" id="index-heading--contact">
           <button class="btn btn-link index-collapse--button collapsed" type="button" data-toggle="collapse" data-target="#index-collapse--contact" aria-expanded="true" aria-controls="index-collapse--contact">
-            <div class="row h100">
+            <div class="row h-100">
               <div class="col-3 my-auto">
                 <img src="./static/images/avatar.jpg" alt="profile picture" class="rounded-circle">
               </div>  
@@ -189,10 +193,55 @@
         </div>
       </div>
     </div>
+    <div class="row d-none d-md-flex card-container">
+      <div class="col-3 ">
+        <div class="card h-100">
+          <img src="./static/images/dog.jpg" alt="dog" class="card-img-top rounded-circle">
+          <div class="card-body">
+            <h5 class="card-title">Services</h5>
+            <p>Dog walking</p>
+            <p>Pet sitting</p>
+            <p>Visiting</p>
+            <p>Horse stabling and exercise</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card h-100">
+          <img src="./static/images/map.jpg" alt="map" class="card-img-top rounded-circle">
+          <div class="card-body">
+            <h5 class="card-title">Area</h5>
+            <p>Covering the Newbury, Lambourne, Hungerford, and Inkpen areas.</p>
+            <p>Further afield? Contact me and ask. I am happy to travel.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="./static/images/horse.png" alt="horse" class="card-img-top rounded-circle">
+          <div class="card-body">
+            <h5 class="card-title">The Paddock</h5>
+            <p>1.2 acres of open space where you can let your horse, pony or llama roam free, exercise and have fun.</p>
+            <p>Ask about the exercise regimes I can run for your beloved pet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="./static/images/avatar.jpg" alt="profile picture" class="card-img-top rounded-circle">
+          <div class="card-body">
+            <h5 class="card-title">Contact</h5>
+            <p><i class="fa fa-phone"></i> 07777 777 777</p>
+            <p><i class="fa fa-envelope"></i> email@email.address.com</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
   </section>
 
 
-  <footer class="container-fluid fixed-bottom">
+  <footer class="fixed-bottom">
     <div class="row footer--list">
       <div class="col-3">
         <i class="fa fa-phone"></i></a>

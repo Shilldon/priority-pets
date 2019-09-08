@@ -1,5 +1,15 @@
+body {
+  background-color: #D1B69E; }
+
+.row {
+  padding: 0;
+  margin: 0; }
+
+h4 {
+  font-size: 1.2rem; }
+
 .navbar {
-  padding: 0rem 1rem !important; }
+  padding: 0rem 1rem 0rem 1rem !important; }
 
 .bg-dark {
   background-color: #535927 !important; }
@@ -7,7 +17,7 @@
 .navbar-brand {
   color: #FFD185 !important;
   font-family: "Bree Serif", serif;
-  font-size: 27px; }
+  font-size: 25px; }
   .navbar-brand span {
     padding-left: 85px; }
   .navbar-brand img {
@@ -22,7 +32,7 @@
   border: none;
   outline: none !important; }
   .navbar-toggler i {
-    font-size: 25px; }
+    font-size: 20px; }
 
 .nav-link {
   color: #FFD185 !important;
@@ -34,21 +44,27 @@
   .navbar-nav li {
     text-align: right; }
 
-.top-section {
-  margin-top: 5vh;
-  height: 35vh;
-  width: 100vw; }
+.navbar-expand-lg {
+  z-index: 1; }
+
+.background {
+  padding-left: 0; }
 
 .top-section--background {
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 40vh;
-  width: 100vw;
   background-image: url("../../static/images/background.jpg");
   background-size: cover;
-  background-position: bottom;
-  background-color: #D1B69E;
+  background-position: top;
   z-index: -1; }
+
+.top-section {
+  margin-top: 5vh;
+  height: 35vh; }
+  .top-section .row {
+    margin: 0;
+    padding: 0; }
 
 .middle-section {
   height: 12.5vh;
@@ -80,7 +96,9 @@
       width: 100%;
       text-decoration: none; }
   .bottom-section .card-header {
-    background-color: #D1B69E; }
+    background-color: #D1B69E;
+    padding-left: 0;
+    padding-right: 0; }
     .bottom-section .card-header button.collapsed .index-collapse--read-less {
       display: none; }
     .bottom-section .card-header button.collapsed .index-collapse--read-more {
@@ -94,12 +112,34 @@
     background-color: #D1B69E;
     font-size: 1rem;
     border: solid 1px #535927; }
+  .bottom-section .card-img-top {
+    margin-left: auto !important;
+    margin-right: auto !important; }
+  .bottom-section .card-container {
+    padding-top: 20px; }
 
 .footer--list {
   color: #FFD185;
   background-color: #535927;
   text-align: center; }
+  .footer--list .row {
+    margin: 0;
+    padding: 0; }
+  .footer--list .col-3 {
+    padding: 0;
+    margin: 0; }
   .footer--list i {
     margin: 10px 0 10px 0; }
+
+@media (min-width: 360px) {
+  h4 {
+    font-size: 1.5rem; }
+
+  .card-header {
+    padding: .75rem 1.25rem; } }
+@media (min-width: 768px) {
+  .top-section--background {
+    background-position: center;
+    box-shadow: 12px 0 15px -4px #D1B69E inset, -12px 0 8px -4px #D1B69E inset; } }
 
 /*# sourceMappingURL=style.css.map */
