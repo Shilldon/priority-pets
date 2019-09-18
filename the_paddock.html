@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Priority Pets</title>
+
+  <!-- Framework css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Montserrat&display=swap" rel="stylesheet">
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./static/css/style.css">
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Framework minified JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Custom scripts -->
+  <script src="./static/js/script.js"></script>
+
+</head>
+
+<body>
+
+  <section class="background container-fluid">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0 top-section--background top-section--the_paddock-background">
+      </div>
+    </div>
+  </section>
+  <!-- Image and text -->
+  <section class="top-section">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="./static/images/pawprint.png" alt="pawprint"/>
+        <span class="navbar--logo-font-large d-none d-lg-inline">Priority Pets</span>
+        <span class="navbar--logo-font-small d-none d-lg-inline" style="padding-left:0px">West Berkshire</span>
+        <span class="navbar--logo-font-large d-lg-none">Priority Pets<br></span><span class="navbar--logo-font-small d-lg-none">West Berkshire</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">The Paddock</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section class="middle-section container-fluid">
+    <div class="row h-100">
+      <div class="col-sm-12 my-auto">
+        <h4><strong>Your pet is my priority</strong></h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="bottom-section container-fluid">
+    <div class="row bottom-section--bottom-card">
+      <div class="col-sm-12">
+        <div class="card h-100">
+          <img src="./static/images/horse.png" alt="paddock icon picture" class="card-img-top rounded-circle">
+          <div class="card-body">
+            <h4 class="card-title"><strong>The Paddock</strong></h4>
+            <hr>
+            <div class="row">
+              <div class="col-4">
+                <img data-toggle="modal" data-target="#paddock-image-modal" class="paddock-image-thumbnail img-fluid" src="./static/images/the_paddock/paddock-2.jpg" alt="the paddock">
+              </div>
+              <div class="col-4">
+                <img data-toggle="modal" data-target="#paddock-image-modal" class="paddock-image-thumbnail img-fluid" src="./static/images/the_paddock/paddock-4.jpg" alt="the paddock">
+              </div>
+              <div class="col-4">
+                <img data-toggle="modal" data-target="#paddock-image-modal" class="paddock-image-thumbnail img-fluid" src="./static/images/the_paddock/paddock-5.jpg" alt="the paddock">
+              </div>
+            </div>
+            <hr class="hr-narrow">
+            <p>I offer more than the traditional dog walking service. Dogs want to run free and enjoy themselves and not to be kept on a lead when out in the fresh air.</p>
+            <p>The Paddock is where your dog can run free and exercise.</p>
+            <p>Three quarters of an acre of natural paddock land, surrounded by 'dog proof' fencing ensures that your pet can have fun and remain completely safe.</p>
+            <hr class="hr-narrow">
+            <p>Give me a call to find out how I can help you.</p>
+            <div class="col-sm-4 offset-sm-4">
+              <a href="contact.html"><button class="contact-button" type="button">Contact</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="fixed-bottom">
+    <div class="row footer--list">
+      <div class="col-3">
+        <i class="fa fa-phone"></i></a>
+        </li>
+      </div>
+      <div class="col-3">
+        <i class="fa fa-envelope"></i></a>
+        </li>
+      </div>
+      <div class="col-3">
+        <i class="fab fa-facebook"></i></a>
+        </li>
+      </div>
+      <div class="col-3">
+        <i class="fa fa-share"></i></a>
+        </li>
+      </div>
+    </div>
+  </footer>
+
+  <!---Image modal-->
+  <div class="modal fade" id="paddock-image-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">The Paddock</h5>
+        </div>
+        <div class="modal-body">
+          <img src="" alt="the paddock">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

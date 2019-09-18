@@ -22,9 +22,22 @@ h4 {
     font-size: 1.2rem;
 }
 
+hr.hr-narrow {
+    width: 25%;
+}
+
+
+
 //----- Nav bar -----//
 .navbar {
     padding: 0rem 1rem 0rem 1rem!important;
+    line-height: 20px;
+    .active {
+        background-color: $highlight-color-light;
+        a {
+            color: $font-color-dark !important;
+        }
+    }
 }
 
 .bg-dark {
@@ -32,9 +45,6 @@ h4 {
 }
 
 .navbar-brand {
-    color: $font-color-light !important;
-    font-family: "Bree Serif", serif;
-    font-size: 25px;
     span {
         padding-left: 85px;
     }
@@ -45,6 +55,18 @@ h4 {
         -webkit-filter: drop-shadow(4px 4px);
         filter: drop-shadow(4px 4px #343f4b);
     }
+}
+
+.navbar--logo-font-large {
+    color: $font-color-light;
+    font-family: "Bree Serif", serif;
+    font-size: 25px;
+}
+
+.navbar--logo-font-small {
+    color: $font-color-light;
+    font-family: "Bree Serif", serif;
+    font-size: 14px;
 }
 
 .navbar-toggler {
@@ -69,8 +91,9 @@ h4 {
     }
 }
 
-.navbar-expand-lg {
+.navbar-expand-md {
     z-index: 1;
+    padding-bottom: 20px;
 }
 
 //-----Background-----//
@@ -82,11 +105,31 @@ h4 {
     position: fixed;
     top: 0;
     height: 40vh;
-    background-image: url("../../static/images/background.jpg");
     background-size: cover;
     background-position: top;
     z-index: -1;
 }
+
+.top-section--index-background {
+    background-image: url("../../static/images/background.jpg");
+}
+
+.top-section--about-background {
+    background-image: url("../../static/images/about.jpg");
+}
+
+.top-section--services-background {
+    background-image: url("../../static/images/services.jpg");
+}
+
+.top-section--the_paddock-background {
+    background-image: url("../../static/images/the_paddock.jpg");
+}
+
+.top-section--contact-background {
+    background-image: url("../../static/images/contact.jpg");
+}
+
 
 //-----Top section-----//
 .top-section {
@@ -115,6 +158,12 @@ h4 {
 .bottom-section {
     padding-bottom: 40px;
     background-color: $background-color-light;
+    .bottom-section--card-column {
+        padding: 0;
+    }
+    .bottom-section--bottom-card {
+        margin-bottom: 20px;
+    }
     .card {
         background-color: $background-color-light;
         color: $font-color-dark;
@@ -123,7 +172,6 @@ h4 {
         font-weight: 900;
         text-align: center;
         border: none;
-
         span {
             color: $font-color-dark;
         }
@@ -138,9 +186,22 @@ h4 {
             width: 100%;
             text-decoration: none;
         }
+        p {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .contact-button {
+            margin-top: 8px;
+            background-color: $background-color-main;
+            color: $font-color-light;
+            border-color: #535927;
+            outline: none;
+            width: 50%;
+        }
     }
     .card-header {
         background-color: $background-color-light;
+        border-bottom: none;
         padding-left: 0;
         padding-right: 0;
         button.collapsed {
@@ -162,7 +223,7 @@ h4 {
 
     }
     .card-body {
-        width: 100%;
+        // width: 100%;
         background-color: $background-color-light;
         font-size: 1rem;
         border: solid 1px $font-color-dark;
@@ -173,7 +234,56 @@ h4 {
         margin-right: auto !important;
     }
     .card-container {
-        padding-top:20px;
+        padding-top: 20px;
+    }
+    form {
+        button {
+            margin-top: 8px;
+            background-color: $background-color-main;
+            color: $font-color-light;
+            border-color: #535927;
+            outline: none;
+        }
+    }
+}
+
+.paddock-image-thumbnail {
+    -webkit-transition: all;
+    -moz-transition: all;
+    -o-transition: all;
+    transition: all;
+    transition-duration: 0.5s;
+    transform: scale(1.0, 1.0);
+}
+
+.paddock-image-thumbnail:hover {
+    -webkit-transition: all;
+    -moz-transition: all;
+    -o-transition: all;
+    transition: all;
+    transition-duration: 0.5s;
+    transform: scale(1.2, 1.2);
+}
+
+#paddock-image-modal {
+    .modal-content {
+        background-color: $background-color-light;
+        color: $font-color-dark;
+    }
+    img {
+        width: 100%;
+        border: solid 4px $background-color-main;
+    }
+    button {
+        background-color: $background-color-main;
+        color: $font-color-light;
+    }
+    .modal-header {
+        border-bottom-color: $background-color-light;
+    }
+    .modal-footer {
+        border-top-color: $background-color-light;
+
     }
 }
 
@@ -206,10 +316,44 @@ h4 {
 }
 
 @media (min-width:768px) {
+
     .top-section--background {
-        background-position: center; // box-shadow: 0 0 8px 8px $background-color-light inset;
+        background-position: center;
         box-shadow: 12px 0 15px -4px $background-color-light inset, -12px 0 8px -4px $background-color-light inset;
-
-
     }
+
+    .bottom-section {
+        .card {
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+    hr {
+        width: 50%;
+    }
+    hr.hr-narrow {
+        width: 10%;
+    }
+}
+
+@media (min-width:1024px) {
+    .navbar {
+        line-height: 40px;
+    }
+    .bottom-section--bottom-card {
+        padding-top: 20px;
+    }
+
+    .bottom-section {
+        .card {
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+        }
+    }
+
 }

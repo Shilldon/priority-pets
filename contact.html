@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Priority Pets</title>
+
+  <!-- Framework css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Montserrat&display=swap" rel="stylesheet">
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./static/css/style.css">
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Framework minified JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Custom scripts -->
+  <script src="./static/js/script.js"></script>
+
+</head>
+
+<body>
+
+  <section class="background container-fluid">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0 top-section--background top-section--contact-background">
+      </div>
+    </div>
+  </section>
+  <!-- Image and text -->
+  <section class="top-section">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="./static/images/pawprint.png" alt="pawprint"/>
+        <span class="navbar--logo-font-large d-none d-lg-inline">Priority Pets</span>
+        <span class="navbar--logo-font-small d-none d-lg-inline" style="padding-left:0px">West Berkshire</span>
+        <span class="navbar--logo-font-large d-lg-none">Priority Pets<br></span><span class="navbar--logo-font-small d-lg-none">West Berkshire</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="the_paddock.html">The Paddock</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section class="middle-section container-fluid">
+    <div class="row h-100">
+      <div class="col-sm-12 my-auto">
+        <h4><strong>Your pet is my priority</strong></h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="bottom-section container-fluid">
+    <div class="row bottom-section--bottom-card">
+      <div class="col-sm-12 col-lg-8 offset-lg-2">
+        <div class="card h-100">
+          <img src="./static/images/contact.jpg" alt="profile picture" class="card-img-top rounded-circle">
+          <div class="card-body">
+            <h4 class="card-title"><strong>Contact Me</strong></h4>
+            <hr>
+            <h5 class="card-title"><strong><i class="fa fa-phone"></i></strong>  07777 777 777</h5>
+            <hr>
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control" id="first-name" aria-label="First name" placeholder="First name">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" aria-label="Last name" placeholder="Last name">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="email-address">Email address</label>
+                    <input type="email" class="form-control" id="email-address" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We will never share your email with anyone else.</small>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" aria-label="Message" placeholder="Message (optional)"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 offset-3 col-md-4 offset-md-4 col-lg-2 offset-lg-5">
+                  <button type="submit" class="btn">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="fixed-bottom">
+    <div class="row footer--list">
+      <div class="col-3">
+        <i class="fa fa-phone"></i></a>
+        </li>
+      </div>
+      <div class="col-3">
+        <i class="fa fa-envelope"></i></a>
+        </li>
+      </div>
+      <div class="col-3">
+        <i class="fab fa-facebook"></i></a>
+        </li>
+      </div>
+      <div class="col-3">
+        <i class="fa fa-share"></i></a>
+        </li>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

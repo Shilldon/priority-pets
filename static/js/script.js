@@ -4,4 +4,9 @@ $(document).ready(function() {
             $('html, body').animate({scrollTop: $(this,"p").offset().top}, 500);
     });
 
+    $('.paddock-image-thumbnail').on("click", function() {
+        var imageSource=$(this).attr("src");
+        $('#paddock-image-modal img').attr("src",imageSource)
+    })
+
 })
