@@ -72,9 +72,11 @@ hr.hr-narrow {
   background-size: cover;
   background-position: top;
   z-index: -1; }
+  .top-section--background img {
+    max-width: 50vh; }
 
 .top-section--index-background {
-  background-image: url("../../static/images/background.jpg"); }
+  background-image: url("../../static/images/index.jpg"); }
 
 .top-section--about-background {
   background-image: url("../../static/images/about.jpg"); }
@@ -131,6 +133,9 @@ hr.hr-narrow {
     .bottom-section .card p {
       margin-top: 8px;
       margin-bottom: 8px; }
+    .bottom-section .card a {
+      text-decoration: none;
+      color: inherit; }
     .bottom-section .card .contact-button {
       margin-top: 8px;
       background-color: #535927;
@@ -183,18 +188,18 @@ hr.hr-narrow {
   transition-duration: 0.5s;
   transform: scale(1.2, 1.2); }
 
-#paddock-image-modal .modal-content {
+.modal .modal-content {
   background-color: #D1B69E;
   color: #535927; }
-#paddock-image-modal img {
+.modal img {
   width: 100%;
   border: solid 4px #535927; }
-#paddock-image-modal button {
+.modal button {
   background-color: #535927;
   color: #FFD185; }
-#paddock-image-modal .modal-header {
+.modal .modal-header {
   border-bottom-color: #D1B69E; }
-#paddock-image-modal .modal-footer {
+.modal .modal-footer {
   border-top-color: #D1B69E; }
 
 .footer--list {
@@ -209,6 +214,9 @@ hr.hr-narrow {
     margin: 0; }
   .footer--list i {
     margin: 10px 0 10px 0; }
+  .footer--list a {
+    text-decoration: none;
+    color: inherit; }
 
 @media (min-width: 360px) {
   h4 {
@@ -218,8 +226,7 @@ hr.hr-narrow {
     padding: .75rem 1.25rem; } }
 @media (min-width: 768px) {
   .top-section--background {
-    background-position: center;
-    box-shadow: 12px 0 15px -4px #D1B69E inset, -12px 0 8px -4px #D1B69E inset; }
+    background-image: none !important; }
 
   .bottom-section .card img {
     width: 120px;

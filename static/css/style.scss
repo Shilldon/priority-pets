@@ -108,10 +108,13 @@ hr.hr-narrow {
     background-size: cover;
     background-position: top;
     z-index: -1;
+    img {
+        max-width:50vh;
+    }
 }
 
 .top-section--index-background {
-    background-image: url("../../static/images/background.jpg");
+    background-image: url("../../static/images/index.jpg");
 }
 
 .top-section--about-background {
@@ -190,6 +193,10 @@ hr.hr-narrow {
             margin-top: 8px;
             margin-bottom: 8px;
         }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }        
         .contact-button {
             margin-top: 8px;
             background-color: $background-color-main;
@@ -265,7 +272,7 @@ hr.hr-narrow {
     transform: scale(1.2, 1.2);
 }
 
-#paddock-image-modal {
+.modal {
     .modal-content {
         background-color: $background-color-light;
         color: $font-color-dark;
@@ -303,6 +310,10 @@ hr.hr-narrow {
     i {
         margin: 10px 0 10px 0;
     }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 @media (min-width:360px) {
@@ -318,8 +329,9 @@ hr.hr-narrow {
 @media (min-width:768px) {
 
     .top-section--background {
-        background-position: center;
-        box-shadow: 12px 0 15px -4px $background-color-light inset, -12px 0 8px -4px $background-color-light inset;
+        background-image:none !important;
+//        background-position: center;
+//        box-shadow: 12px 0 15px -4px $background-color-light inset, -12px 0 8px -4px $background-color-light inset;
     }
 
     .bottom-section {
@@ -355,5 +367,4 @@ hr.hr-narrow {
 
         }
     }
-
 }

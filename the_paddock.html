@@ -35,6 +35,7 @@
   <section class="background container-fluid">
     <div class="row">
       <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0 top-section--background top-section--the_paddock-background">
+        <img src="./static/images/the_paddock.jpg" class="img-fluid mx-auto my-auto d-none d-md-block" alt="title image - the paddock">
       </div>
     </div>
   </section>
@@ -116,26 +117,110 @@
 
   <footer class="fixed-bottom">
     <div class="row footer--list">
-      <div class="col-3">
-        <i class="fa fa-phone"></i></a>
+      <div class="col-4">
+        <span><i class="fa fa-phone" data-toggle="modal" data-target="#telephone-modal" ></i></span>
+
         </li>
       </div>
-      <div class="col-3">
-        <i class="fa fa-envelope"></i></a>
+      <div class="col-4">
+        <span><i class="fa fa-envelope" data-toggle="modal" data-target="#email-modal"></i></span>
         </li>
       </div>
-      <div class="col-3">
-        <i class="fab fa-facebook"></i></a>
-        </li>
-      </div>
-      <div class="col-3">
-        <i class="fa fa-share"></i></a>
+      <div class="col-4">
+        <a href="https://www.facebook.com/sheilah.osborne" target="_blank"><i class="fab fa-facebook"></i></a>
         </li>
       </div>
     </div>
   </footer>
 
-  <!---Image modal-->
+
+  <!-- Modals -->
+  <!-- telephone number -->
+  <div class="modal fade" id="telephone-modal" tabindex="-1" role="dialog" aria-label="telephone modal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Telephone Number</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <h3>07387 715 779</h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- email contact form -->
+  <div class="modal fade" id="email-modal" tabindex="-1" role="dialog" aria-label="email modal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <form onsubmit="return sendMail(this);">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="first-name">First Name</label>
+                  <input type="text" class="form-control" name="firstname" id="first-name" aria-label="First name" placeholder="First name">
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" class="form-control" name="lastname" id="last-name" aria-label="Last name" placeholder="Last name">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="email-address">Email address</label>
+                  <input type="email" class="form-control" name="emailaddress" id="email-address" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We will never share your email with anyone else.</small>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" aria-label="Subject" value="Pet-stting request">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" name="petsittingrequest" id="message" aria-label="Message" placeholder="Message (optional)"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="col-3">
+              <button type="submit" class="btn btn-secondary">Submit</button>
+            </div>
+            <div class="col-3 offset-6">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!---images-->
   <div class="modal fade" id="paddock-image-modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
