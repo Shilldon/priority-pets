@@ -25,8 +25,18 @@
   <!-- Framework minified JavaScript -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("user_DUJyA5m9ERDIalmUPhLr1");
+    })();
+  </script>
+
   <!-- Custom scripts -->
   <script src="./static/js/script.js"></script>
+  <script src="./static/js/sendMail.js"></script>
 
 </head>
 
@@ -88,20 +98,20 @@
           <div class="card-body">
             <h4 class="card-title"><strong>Contact Me</strong></h4>
             <hr>
-            <h5 class="card-title"><strong><i class="fa fa-phone"></i></strong>  07777 777 777</h5>
+            <h5 class="card-title"><strong><i class="fa fa-phone"></i></strong> 07387 715 779</h5>
             <hr>
-            <form>
+            <form onsubmit="return sendMail(this);">
               <div class="row">
                 <div class="col-12 col-md-6">
                   <div class="form-group">
                     <label for="first-name">First Name</label>
-                    <input type="text" class="form-control" id="first-name" aria-label="First name" placeholder="First name">
+                    <input type="text" class="form-control" name="firstname" id="first-name" aria-label="First name" placeholder="First name">
                   </div>
                 </div>
                 <div class="col-12 col-md-6">
                   <div class="form-group">
                     <label for="last-name">Last Name</label>
-                    <input type="text" class="form-control" id="last-name" aria-label="Last name" placeholder="Last name">
+                    <input type="text" class="form-control" name="lastname" id="last-name" aria-label="Last name" placeholder="Last name">
                   </div>
                 </div>
               </div>
@@ -109,7 +119,7 @@
                 <div class="col-12">
                   <div class="form-group">
                     <label for="email-address">Email address</label>
-                    <input type="email" class="form-control" id="email-address" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="email" class="form-control" name="emailaddress" id="email-address" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">We will never share your email with anyone else.</small>
                   </div>
                 </div>
@@ -118,7 +128,7 @@
                 <div class="col-12">
                   <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea class="form-control" id="message" aria-label="Message" placeholder="Message (optional)"></textarea>
+                    <textarea class="form-control" name="petsittingrequest" id="message" aria-label="Message" placeholder="Message (optional)"></textarea>
                   </div>
                 </div>
               </div>
