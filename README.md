@@ -30,6 +30,7 @@ I need to easily access information on the site
     * Dog https://pxhere.com/en/photo/847881
     * Horse https://pxhere.com/en/photo/942302
     * Map https://pxhere.com/en/photo/13215
-    
+    Common Wikimedia licenced under GNU Free Documentation licence (https://www.gnu.org/licenses/fdl-1.3.html):
+    * Pawprint https://commons.wikimedia.org/wiki/File:White_paw_print.png - credit is given to the author https://commons.wikimedia.org/wiki/User:Mistman123. The original image was editted to provide colour and shadow.
 =======
 ## Current Work In Progress
